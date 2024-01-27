@@ -1,12 +1,19 @@
 
+import { Button, Col } from 'antd';
+import Searcher from './components/Searcher';
 import './App.css';
-import { Button } from 'antd';
+import PokemonList from './components/PokemonList';
+
 
 function App() {
   return (
-    <div className="App">
+    <>
+    <Col span={8} offset={8}>
+      <Searcher />
       <Button type="primary">Button</Button>
-    </div>
+    </Col>
+    <PokemonList />
+    </>
   );
 }
 
